@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-sis
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: springboot-sis
+  template:
+    metadata:
+      labels:
+        app: springboot-sis
+    spec:
+      containers:
+        - name: student-container
+          image: studentinformationsystem:v1
+          ports:
+            - containerPort: 8081
