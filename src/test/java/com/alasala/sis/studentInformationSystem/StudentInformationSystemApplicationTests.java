@@ -14,6 +14,7 @@ class StudentInformationSystemApplicationTests {
 	@Test
 	void contextLoads() {
         logger.info("This is the test File, Test Case Executing");
+        logger.info("This is the test File, I am going to check second auto build working on jenkins or not. ");
         assertEquals(true, true);
 	}
 
