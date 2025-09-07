@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: student-container
-          image: studentinformationsystem:v1
+          image: usmanrana4106/sisjenkinpipeline
           ports:
             - containerPort: 8081
