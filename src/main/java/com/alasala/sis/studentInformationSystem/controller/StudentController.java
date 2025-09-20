@@ -4,6 +4,7 @@ import com.alasala.sis.studentInformationSystem.common.ApiResponse;
 import com.alasala.sis.studentInformationSystem.common.ResponseBuilder;
 import com.alasala.sis.studentInformationSystem.dto.AddStudentDto;
 import com.alasala.sis.studentInformationSystem.dto.GetStudentDto;
+import com.alasala.sis.studentInformationSystem.service.StudentService;
 import com.alasala.sis.studentInformationSystem.service.impl.StudentServiceImpl;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -17,7 +18,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/student")
 public class StudentController {
-    private final StudentServiceImpl studentService;
+    private final StudentService studentService;
 
     @GetMapping("/docker")
     public String dockerCheck(){
